@@ -14,7 +14,7 @@ main = do names <- getCurrentDirectory >>= getDirectoryContents
           print content
           readMePath <- fmap (++readMe) getCurrentDirectory 
           print readMePath
-          writeFile readMePath $ "# articles" ++ content 
+          writeFile readMePath $ "# Articles" ++ content 
 
 nameToLink :: String -> String
 nameToLink name = "\n[" ++ takeWhile (/='.') name ++ "](" ++ name ++ ")"
