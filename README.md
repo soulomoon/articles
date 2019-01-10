@@ -1,3 +1,2 @@
-# articles
-
-[comonad](comonad.md)
+# Articles
+[Comonad](Comonad.md)

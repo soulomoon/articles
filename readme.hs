@@ -12,7 +12,7 @@ main = do names <- getCurrentDirectory >>= getDirectoryContents
           print filtered
           let content = foldMap nameToLink filtered
           print content
-          readMePath <- fmap (++readMe) getCurrentDirectory 
+          readMePath <- fmap (++"/"++readMe) getCurrentDirectory 
           print readMePath
           writeFile readMePath $ "# Articles" ++ content 
 
