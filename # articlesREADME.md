@@ -1,3 +1,2 @@
-# articles
 
 [comonad](comonad.md)
