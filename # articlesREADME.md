@@ -1,2 +1,0 @@
-
-[comonad](comonad.md)
