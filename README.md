@@ -1,3 +1,2 @@
 # Articles
-
-[Comonad](Comonad.md)
+[Comonad-and-stream](Comonad-and-stream.md)
