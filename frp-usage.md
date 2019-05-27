@@ -17,12 +17,15 @@
   ```zsh
   brew install frpc 
   # replace server addr and the remote port on
-  sed -i '' -e 's/server_addr.*/server_addr = x.x.x.x/' -e 's/remote_port.*/remote_port = 6000/' 
+  sed -i ''\
+  -e 's/server_addr.*/server_addr = x.x.x.x/'\
+  -e 's/remote_port.*/remote_port = 6000/' \
+  -e 's/local_port.*/local_port = 22/' \
   /usr/local/etc/frp/frpc.ini 
   # turn ssh on
   sudo systemsetup -getremotelogin 
   sudo systemsetup -setremotelogin on
-  sudo systemsetup -setremotelogin off
+  # sudo systemsetup -setremotelogin off
   # start the client
   frpc -c /usr/local/etc/frp/frpc.ini
   ```
